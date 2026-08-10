@@ -10,6 +10,6 @@ test.describe("valid login function", () =>{
         await loginPage.verifyLoginSuccess();
     })
     test("second test",async({page}) =>{
-        console.log("hello everyone rascallgit ")
+        console.log("hello rascallgit ")
     });
 })
