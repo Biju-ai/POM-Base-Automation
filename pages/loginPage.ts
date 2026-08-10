@@ -9,8 +9,8 @@ export class LoginPage{
 
 constructor(page:Page){
     this.page=page;
-    this.username=page.locator('');
-    this.password= page.locator('');
+    this.username= page.getByPlaceholder('Username');
+    this.password= page.getByPlaceholder('Password');
     this.loginButton= page.getByRole('button',{name:"Login"});
     this.errorMessage= page.getByText('Invalid username or password.', {exact:true
         
@@ -38,7 +38,7 @@ login = async (username: string, password:string) =>{
 };
 
 verifyLoginSuccess = async () =>{
-   return await expect(this.page).toHaveURL(/manufactures/);
+   return await expect(this.page).toHaveURL(/dashboard/);
 };
 
 verifyErrorMessage = async (info: string) =>{

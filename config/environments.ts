@@ -1,3 +1,3 @@
 export const config = {
-  baseURL: 'https://automationexercise.com'
+  baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth'
 };
