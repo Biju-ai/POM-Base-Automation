@@ -1,0 +1,4 @@
+From:
+WORKDIR:
+COPY:
+RUN:
