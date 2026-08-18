@@ -9,4 +9,7 @@ test.describe("valid login function", () =>{
         await loginPage.login(user.validUser.username,user.validUser.password);
         await loginPage.verifyLoginSuccess();
     })
+    test("second test",async({page}) =>{
+        console.log("hello rascallgit ")
+    });
 })
