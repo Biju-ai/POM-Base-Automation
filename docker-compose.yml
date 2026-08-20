@@ -1,0 +1,7 @@
+services:
+
+  pom-automation:
+    build: .
+    container_name: pom-base-automation
+  # ports:
+  #   - "8081:8080"
